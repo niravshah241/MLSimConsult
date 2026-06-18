@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SimuNova Consulting | Engineering Simulation & Scientific AI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    color:#222;
+    line-height:1.6;
+    background:#f8fafc;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+header{
+    background:#0f172a;
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 0;
+}
+
+.logo{
+    font-size:1.6rem;
+    font-weight:800;
+    color:#38bdf8;
+}
+
+.nav-links{
+    display:flex;
+    gap:2rem;
+    list-style:none;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.hero{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    padding:100px 0;
+}
+
+.hero-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:20px;
+    line-height:1.2;
+}
+
+.hero p{
+    font-size:1.1rem;
+    margin-bottom:30px;
+    opacity:0.9;
+}
+
+.btn{
+    display:inline-block;
+    background:#38bdf8;
+    color:#0f172a;
+    padding:14px 28px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:700;
+}
+
+.hero-card{
+    background:rgba(255,255,255,0.08);
+    padding:30px;
+    border-radius:15px;
+    backdrop-filter:blur(10px);
+}
+
+.section{
+    padding:80px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:2.4rem;
+    color:#0f172a;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#1e3a8a;
+}
+
+.services{
+    background:white;
+}
+
+.highlight{
+    background:#e0f2fe;
+}
+
+.stats{
+    background:#0f172a;
+    color:white;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    text-align:center;
+}
+
+.stat h3{
+    font-size:2rem;
+    color:#38bdf8;
+}
+
+.cta{
+    text-align:center;
+    background:linear-gradient(135deg,#1e3a8a,#2563eb);
+    color:white;
+}
+
+.contact-form{
+    max-width:700px;
+    margin:auto;
+}
+
+input, textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+button{
+    background:#38bdf8;
+    border:none;
+    padding:15px 30px;
+    border-radius:8px;
+    font-weight:700;
+    cursor:pointer;
+}
+
+footer{
+    background:#020617;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+@media(max-width:900px){
+
+.hero-content{
+    grid-template-columns:1fr;
+}
+
+.stats-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.hero h1{
+    font-size:2.2rem;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container">
+<nav>
+<div class="logo">SimuNova</div>
+
+<ul class="nav-links">
+<li><a href="#services">Services</a></li>
+<li><a href="#expertise">Expertise</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+
+<div>
+<h1>Engineering Simulation Meets Scientific AI</h1>
+
+<p>
+We help organizations accelerate innovation using advanced engineering simulations,
+multiphysics modeling, digital twins, and Scientific Machine Learning (SciML).
+From classical physics-based analysis to AI-enhanced predictive models, we deliver
+faster and more accurate engineering insights.
+</p>
+
+<a href="#contact" class="btn">Schedule a Consultation</a>
+</div>
+
+<div class="hero-card">
+<h3>Core Capabilities</h3>
+<br>
+<p>✓ Finite Element Analysis (FEA)</p>
+<p>✓ Computational Fluid Dynamics (CFD)</p>
+<p>✓ Thermal & Structural Simulation</p>
+<p>✓ Multiphysics Modeling</p>
+<p>✓ Physics-Informed Neural Networks (PINNs)</p>
+<p>✓ Scientific Machine Learning (SciML)</p>
+<p>✓ Reduced Order Models</p>
+<p>✓ AI-Driven Digital Twins</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section services" id="services">
+<div class="container">
+
+<div class="section-title">
+<h2>Our Services</h2>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>Traditional Engineering Simulation</h3>
+<p>
+High-fidelity simulations using established physics-based methods for
+structural, thermal, fluid, electromagnetic and multiphysics systems.
+</p>
+</div>
+
+<div class="card">
+<h3>Scientific Machine Learning</h3>
+<p>
+Combine domain physics with machine learning to create predictive models
+that generalize beyond available data.
+</p>
+</div>
+
+<div class="card">
+<h3>Physics-Informed Neural Networks</h3>
+<p>
+Develop PINN solutions for inverse problems, parameter estimation,
+PDE solving and real-time simulation applications.
+</p>
+</div>
+
+<div class="card">
+<h3>Digital Twin Development</h3>
+<p>
+Create real-time virtual representations of assets and processes
+using sensor data and physics-based models.
+</p>
+</div>
+
+<div class="card">
+<h3>Model Reduction</h3>
+<p>
+Reduce computational costs through surrogate models,
+reduced-order modeling and AI acceleration.
+</p>
+</div>
+
+<div class="card">
+<h3>Custom R&D Solutions</h3>
+<p>
+Tailored simulation and AI research projects for aerospace,
+automotive, energy, manufacturing and biotech sectors.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section highlight" id="expertise">
+<div class="container">
+
+<div class="section-title">
+<h2>Technology Expertise</h2>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>Engineering Solvers</h3>
+<p>
+ANSYS, Abaqus, COMSOL, OpenFOAM, STAR-CCM+, LS-DYNA,
+and custom numerical solvers.
+</p>
+</div>
+
+<div class="card">
+<h3>Scientific Computing</h3>
+<p>
+Python, Julia, MATLAB, HPC clusters,
+GPU acceleration and cloud-native simulation pipelines.
+</p>
+</div>
+
+<div class="card">
+<h3>AI & Scientific ML</h3>
+<p>
+PyTorch, TensorFlow, DeepXDE, Neural Operators,
+PINNs, Operator Learning and Surrogate Modeling.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section stats">
+<div class="container">
+
+<div class="stats-grid">
+
+<div class="stat">
+<h3>100+</h3>
+<p>Projects Delivered</p>
+</div>
+
+<div class="stat">
+<h3>15+</h3>
+<p>Industry Domains</p>
+</div>
+
+<div class="stat">
+<h3>50x</h3>
+<p>Simulation Speedup</p>
+</div>
+
+<div class="stat">
+<h3>99%</h3>
+<p>Model Accuracy Targets</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section" id="about">
+<div class="container">
+
+<div class="section-title">
+<h2>Why SimuNova?</h2>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>Physics First</h3>
+<p>
+We build solutions grounded in scientific principles and validated engineering methodologies.
+</p>
+</div>
+
+<div class="card">
+<h3>AI Enhanced</h3>
+<p>
+Leverage machine learning to accelerate simulations without sacrificing accuracy.
+</p>
+</div>
+
+<div class="card">
+<h3>Industry Focused</h3>
+<p>
+Practical solutions for aerospace, automotive, energy, manufacturing and high-tech industries.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section cta" id="contact">
+<div class="container">
+
+<h2>Start Your Next Simulation Project</h2>
+<br>
+<p>
+Whether you need advanced physics simulation or AI-driven engineering intelligence,
+our experts can help.
+</p>
+
+<br><br>
+
+<form class="contact-form">
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<input type="text" placeholder="Company">
+<textarea rows="6" placeholder="Tell us about your project"></textarea>
+
+<button type="submit">Request Consultation</button>
+</form>
+
+</div>
+</section>
+
+<footer>
+<p>
+© 2026 MLSimConsult. Engineering Simulation • Scientific Machine Learning • Digital Twins
+</p>
+</footer>
+
+</body>
+</html>
